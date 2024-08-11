@@ -13,7 +13,7 @@ const Service: React.FC = () => {
         Our Services
       </h1>
       <hr className="bg-slate-200 my-2 mx-5 h-[2px]" />
-      <div className="flex xl:justify-around md:justify-between max-sm:flex-col my-20 ">
+      <div className="flex xl:justify-around md:justify-between md:ml-14 md:gap-40 max-sm:flex-col my-20 ">
         {/* Web Designing */}
         <AnimatedSection className="relative group my-20 overflow-hidden rounded-xl shadow-2xl shadow-slate-900">
           <div className="relative">
