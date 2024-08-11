@@ -146,7 +146,7 @@ const Navbar = () => {
           </span>
         </nav>
         <div
-          className={`fixed top-[60px] right-0 w-full bg-white dark:bg-medium dark:text-white flex flex-col items-center justify-center gap-5 py-2 z-50 md:hidden ${
+          className={`fixed top-[60px] right-0 w-full bg-white dark:bg-medium flex flex-col items-center justify-center gap-5 py-2 z-50 md:hidden ${
             animateMenu
               ? "animate-slideDown"
               : menuOpen
@@ -156,7 +156,7 @@ const Navbar = () => {
           style={{ display: menuOpen || animateMenu ? "flex" : "none" }}
         >
           <li
-            className={`mx-2 my-2 text-black hover:border-b-2 hover:border-cyan-400 pacifico-regular ${
+            className={`mx-2 my-2 text-black hover:border-b-2 dark:text-white hover:border-cyan-400 pacifico-regular ${
               activeSection === "home" ? "border-b-2 border-cyan-400" : ""
             }`}
             onClick={() => handleLinkClick("home")}
@@ -164,7 +164,7 @@ const Navbar = () => {
             Home
           </li>
           <li
-            className={`mx-2 my-2 text-black hover:border-b-2 hover:border-cyan-400 pacifico-regular ${
+            className={`mx-2 my-2 text-black hover:border-b-2 dark:text-white hover:border-cyan-400 pacifico-regular ${
               activeSection === "about" ? "border-b-2 border-cyan-400" : ""
             }`}
             onClick={() => handleLinkClick("about")}
@@ -172,7 +172,7 @@ const Navbar = () => {
             About
           </li>
           <li
-            className={`mx-2 my-2 text-black hover:border-b-2 hover:border-cyan-400 pacifico-regular ${
+            className={`mx-2 my-2 text-black hover:border-b-2 dark:text-white hover:border-cyan-400 pacifico-regular ${
               activeSection === "services" ? "border-b-2 border-cyan-400" : ""
             }`}
             onClick={() => handleLinkClick("services")}
@@ -180,7 +180,7 @@ const Navbar = () => {
             Services
           </li>
           <li
-            className={`mx-2 my-2 text-black hover:border-b-2 hover:border-cyan-400 pacifico-regular ${
+            className={`mx-2 my-2 text-black hover:border-b-2 dark:text-white hover:border-cyan-400 pacifico-regular ${
               activeSection === "contact" ? "border-b-2 border-cyan-400" : ""
             }`}
             onClick={() => handleLinkClick("contact")}
