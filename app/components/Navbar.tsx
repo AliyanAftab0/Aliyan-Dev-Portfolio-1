@@ -146,7 +146,7 @@ const Navbar = () => {
           </span>
         </nav>
         <div
-          className={`fixed top-[60px] right-0 w-full bg-white flex flex-col items-center justify-center gap-5 py-2 z-50 md:hidden ${
+          className={`fixed top-[60px] right-0 w-full bg-white dark:bg-medium flex flex-col items-center justify-center gap-5 py-2 z-50 md:hidden ${
             animateMenu
               ? "animate-slideDown"
               : menuOpen
