@@ -22,6 +22,12 @@ const Navbar = () => {
     }
   };
 
+  const handleLinkClick = (id: string) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    setActiveSection(id);
+    setMenuOpen(false);
+  };
+
   const toggleMenu = () => {
     if (menuOpen) {
       setAnimateMenu(false); // Trigger the slide-up animation
@@ -81,7 +87,7 @@ const Navbar = () => {
           }`}
         >
           <span className="-mx-7 -my-12 max-md:w-[100]">
-            <Link href="#home">
+            <Link href="#home" onClick={() => handleLinkClick("home")}>
               <Image
                 className="rounded-full dark:text-white"
                 src={Logo}
@@ -92,51 +98,43 @@ const Navbar = () => {
             </Link>
           </span>
           <ul className="flex fixed right-0 gap-5 py-2 mr-24 max-md:hidden">
-            <Link href="#home">
-              <li
-                className={`mx-2 my-2 text-black hover:border-b-2 hover:border-cyan-400 dark:text-white pacifico-regular ${
-                  activeSection === "home" ? "border-b-2 border-cyan-400" : ""
-                }`}
-              >
-                Home
-              </li>
-            </Link>
-            <Link href="#about">
-              <li
-                className={`mx-2 my-2 text-black hover:border-b-2 hover:border-cyan-400 dark:text-white pacifico-regular ${
-                  activeSection === "about" ? "border-b-2 border-cyan-400" : ""
-                }`}
-              >
-                About
-              </li>
-            </Link>
-            <Link href="#services">
-              <li
-                className={`mx-2 my-2 text-black hover:border-b-2 hover:border-cyan-400 dark:text-white pacifico-regular ${
-                  activeSection === "services"
-                    ? "border-b-2 border-cyan-400"
-                    : ""
-                }`}
-              >
-                Services
-              </li>
-            </Link>
-            <Link href="#contact">
-              <li
-                className={`mx-2 my-2 text-black hover:border-b-2 hover:border-cyan-400 dark:text-white pacifico-regular ${
-                  activeSection === "contact"
-                    ? "border-b-2 border-cyan-400"
-                    : ""
-                }`}
-              >
-                Contact
-              </li>
-            </Link>
+            <li
+              className={`mx-2 my-2 text-black hover:border-b-2 cursor-pointer hover:border-cyan-400 dark:text-white pacifico-regular ${
+                activeSection === "home" ? "border-b-2 border-cyan-400" : ""
+              }`}
+              onClick={() => handleLinkClick("home")}
+            >
+              Home
+            </li>
+            <li
+              className={`mx-2 my-2 text-black hover:border-b-2 cursor-pointer hover:border-cyan-400 dark:text-white pacifico-regular ${
+                activeSection === "about" ? "border-b-2 border-cyan-400" : ""
+              }`}
+              onClick={() => handleLinkClick("about")}
+            >
+              About
+            </li>
+            <li
+              className={`mx-2 my-2 text-black hover:border-b-2 cursor-pointer hover:border-cyan-400 dark:text-white pacifico-regular ${
+                activeSection === "services" ? "border-b-2 border-cyan-400" : ""
+              }`}
+              onClick={() => handleLinkClick("services")}
+            >
+              Services
+            </li>
+            <li
+              className={`mx-2 my-2 text-black hover:border-b-2 cursor-pointer hover:border-cyan-400 dark:text-white pacifico-regular ${
+                activeSection === "contact" ? "border-b-2 border-cyan-400" : ""
+              }`}
+              onClick={() => handleLinkClick("contact")}
+            >
+              Contact
+            </li>
           </ul>
           <span className="py-2 max-sm:-mr-36">
             <ThemeToggle />
           </span>
-          <span className="max-md:flex max-md:my-3 max-md:block md:hidden">
+          <span className="max-md:flex max-md:my-3 md:hidden">
             <Image
               src={menuOpen ? cross : menu}
               width={30}
@@ -157,42 +155,38 @@ const Navbar = () => {
           }`}
           style={{ display: menuOpen || animateMenu ? "flex" : "none" }}
         >
-          <Link href="#home" onClick={toggleMenu}>
-            <li
-              className={`mx-2 my-2 text-black hover:border-b-2 hover:border-cyan-400 pacifico-regular ${
-                activeSection === "home" ? "border-b-2 border-cyan-400" : ""
-              }`}
-            >
-              Home
-            </li>
-          </Link>
-          <Link href="#about" onClick={toggleMenu}>
-            <li
-              className={`mx-2 my-2 text-black hover:border-b-2 hover:border-cyan-400 pacifico-regular ${
-                activeSection === "about" ? "border-b-2 border-cyan-400" : ""
-              }`}
-            >
-              About
-            </li>
-          </Link>
-          <Link href="#services" onClick={toggleMenu}>
-            <li
-              className={`mx-2 my-2 text-black hover:border-b-2 hover:border-cyan-400 pacifico-regular ${
-                activeSection === "services" ? "border-b-2 border-cyan-400" : ""
-              }`}
-            >
-              Services
-            </li>
-          </Link>
-          <Link href="#contact" onClick={toggleMenu}>
-            <li
-              className={`mx-2 my-2 text-black hover:border-b-2 hover:border-cyan-400 pacifico-regular ${
-                activeSection === "contact" ? "border-b-2 border-cyan-400" : ""
-              }`}
-            >
-              Contact
-            </li>
-          </Link>
+          <li
+            className={`mx-2 my-2 text-black hover:border-b-2 hover:border-cyan-400 pacifico-regular ${
+              activeSection === "home" ? "border-b-2 border-cyan-400" : ""
+            }`}
+            onClick={() => handleLinkClick("home")}
+          >
+            Home
+          </li>
+          <li
+            className={`mx-2 my-2 text-black hover:border-b-2 hover:border-cyan-400 pacifico-regular ${
+              activeSection === "about" ? "border-b-2 border-cyan-400" : ""
+            }`}
+            onClick={() => handleLinkClick("about")}
+          >
+            About
+          </li>
+          <li
+            className={`mx-2 my-2 text-black hover:border-b-2 hover:border-cyan-400 pacifico-regular ${
+              activeSection === "services" ? "border-b-2 border-cyan-400" : ""
+            }`}
+            onClick={() => handleLinkClick("services")}
+          >
+            Services
+          </li>
+          <li
+            className={`mx-2 my-2 text-black hover:border-b-2 hover:border-cyan-400 pacifico-regular ${
+              activeSection === "contact" ? "border-b-2 border-cyan-400" : ""
+            }`}
+            onClick={() => handleLinkClick("contact")}
+          >
+            Contact
+          </li>
         </div>
       </div>
     </>
