@@ -61,7 +61,7 @@ const Contact: React.FC = () => {
             </span>
           </AnimatedSection>
 
-          <AnimatedSection className="max-lg:w-36 lg:w-1/2">
+          <AnimatedSection className="max-lg:w-[21rem] lg:w-1/2">
             <form onSubmit={handleSubmit}>
               <input
                 type="text"
