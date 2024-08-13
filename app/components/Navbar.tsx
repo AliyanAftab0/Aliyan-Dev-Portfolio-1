@@ -131,7 +131,7 @@ const Navbar = () => {
               Contact
             </li>
           </ul>
-          <span className="py-2 max-sm:-mr-36">
+          <span className="py-1 max-sm:-mr-32">
             <ThemeToggle />
           </span>
           <span className="max-md:flex max-md:my-3 md:hidden">

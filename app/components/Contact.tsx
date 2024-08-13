@@ -33,7 +33,7 @@ const Contact: React.FC = () => {
             Contact Us
           </h1>
         </AnimatedSection>
-        <hr className="bg-slate-200 my-2 mx-5 h-[2px]" />
+        <hr className="bg-slate-200 my-2 mx-1 h-[2px]" />
         <div
           id="contact"
           className="md:flex md:justify-between md:items-center md:mx-36 my-32 max-md:flex-col"

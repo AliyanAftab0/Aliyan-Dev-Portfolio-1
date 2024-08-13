@@ -11,8 +11,8 @@ const About = () => {
       <h1 className="text-3xl text-cyan-700 pacifico-regular flex justify-center my-9">
         About US
       </h1>
-      <div className="border-2 xl:h-[28rem] lg:h-[33rem] md:h-[26rem] sm:h-[29rem] md:w-[49rem] max-md:text-center max-sm:w-[20rem] max-sm:h-[43rem] lg:w-[60rem] 2xl:w-[88rem] rounded-lg flex flex-col shadow-2xl mt-8 mb-28 mx-10">
-        <span className="h-3 max-md:absolute max-md:top-[45rem] max-md:left-[6.5rem] lg:absolute lg:top-[47rem] md:mt-24 2xl:mt-16 2xl:mb-0 max-md:flex-col 2xl:justify-between">
+      <div className="border-2 xl:h-[28rem] lg:h-[33rem] md:h-[26rem] sm:h-[29rem] md:w-[49rem] max-md:text-center max-sm:w-[20rem] max-sm:h-[43rem] lg:w-[60rem] 2xl:w-[88rem] rounded-lg flex flex-col shadow-2xl mt-8 mb-28 mx-10 max-sm:mx-auto">
+        <span className="h-3 max-md:absolute max-md:top-[45rem] max-sm:-ml-3 max-md:left-[6.5rem] lg:absolute lg:top-[47rem] md:mt-24 2xl:mt-16 2xl:mb-0 max-md:flex-col 2xl:justify-between">
           <Image
             src={Logo}
             width={200}
@@ -24,7 +24,7 @@ const About = () => {
           <hr className="h-[18rem] xl:h-[20rem] lg:h-[24.9rem] w-[2px] bg-gray-200 my-0 absolute 2xl:left-[15rem] md:left-[216px] xl:left-[260px] top-[47rem]" />
         </span>
         <span className="md:hidden">
-          <hr className="bg-gray-400 absolute top-[56rem] left-[5rem] w-64" />
+          <hr className="bg-gray-400 absolute top-[56rem] max-sm:left-[4rem] left-[5rem] w-64" />
         </span>
         <span className="absolute xl:left-[19rem] 2xl:left-[18rem] xl:top-[48rem] md:top-[48rem] md:left-[16rem]  max-md:top-[58rem]">
           <AnimatedParagraph>
