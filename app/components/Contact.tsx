@@ -67,7 +67,7 @@ const Contact: React.FC = () => {
                 type="text"
                 name="name"
                 placeholder="Enter Your Name"
-                className="pacifico-regular border-4 border-cyan-600 rounded-lg h-12 w-full my-3 px-3"
+                className="pacifico-regular border-4 border-cyan-600 dark:text-black rounded-lg h-12 w-full my-3 px-3"
                 autoComplete="off"
                 required
               />
@@ -81,7 +81,7 @@ const Contact: React.FC = () => {
                 type="email"
                 name="email"
                 placeholder="Enter Your Valid Email"
-                className="pacifico-regular border-4 border-cyan-600 rounded-lg h-12 w-full my-3 px-3"
+                className="pacifico-regular border-4 border-cyan-600 dark:text-black rounded-lg h-12 w-full my-3 px-3"
                 autoComplete="off"
                 required
               />
@@ -95,7 +95,7 @@ const Contact: React.FC = () => {
                 type="text"
                 name="subject"
                 placeholder="Enter Your Subject"
-                className="pacifico-regular border-4 border-cyan-600 rounded-lg h-12 w-full my-3 px-3"
+                className="pacifico-regular border-4 border-cyan-600 dark:text-black rounded-lg h-12 w-full my-3 px-3"
                 autoComplete="off"
                 required
               />
@@ -108,7 +108,7 @@ const Contact: React.FC = () => {
               <textarea
                 name="comment"
                 placeholder="Message"
-                className="pacifico-regular border-4 border-cyan-600 rounded-lg h-40 w-full my-3 px-3 py-2 block"
+                className="pacifico-regular border-4 border-cyan-600 dark:text-black rounded-lg h-40 w-full my-3 px-3 py-2 block"
                 required
                 autoComplete="off"
               />
@@ -120,9 +120,8 @@ const Contact: React.FC = () => {
               <button
                 type="submit"
                 disabled={state.submitting}
-                className="text-white pacifico-regular bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
-              >
-                Send Message
+                className="bg-cyan-700 text-white px-6 pacifico-regular py-2 rounded-lg">
+                  Send Message
               </button>
             </form>
           </AnimatedSection>
