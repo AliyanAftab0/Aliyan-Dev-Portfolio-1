@@ -8,7 +8,7 @@ import AnimatedParagraph from "./AnimatedParagraph";
 const About = () => {
   return (
     <>
-      <h1 className="text-3xl text-cyan-700 pacifico-regular flex justify-center my-9">
+      <h1 className="text-3xl text-cyan-700 dark:text-cyan-400 pacifico-regular flex justify-center my-9">
         About US
       </h1>
       <div className="border-2 xl:h-[28rem] lg:h-[33rem] md:h-[26rem] sm:h-[29rem] md:w-[49rem] max-md:text-center max-sm:w-[20rem] max-sm:h-[43rem] lg:w-[60rem] 2xl:w-[88rem] rounded-lg flex flex-col shadow-2xl mt-8 mb-28 mx-10 max-sm:mx-auto">

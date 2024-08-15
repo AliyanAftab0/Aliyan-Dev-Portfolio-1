@@ -10,7 +10,7 @@ const Thanks = () => {
       id="thank"
       className="flex flex-col justify-center items-center pacifico-regular h-screen"
     >
-      <h1 className="text-cyan-600 text-4xl pacifico-regular">Thank you for the message!💌</h1>
+      <h1 className="text-cyan-600 dark:text-cyan-400 text-4xl pacifico-regular">Thank you for the message!💌</h1>
       <h2 className="text-2xl mt-4 pacifico-regular">I'll get back to you as soon as possible!</h2>
       <button
         onClick={handleBackToPortfolio}

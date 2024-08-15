@@ -9,7 +9,7 @@ import Link from "next/link";
 const Service: React.FC = () => {
   return (
     <>
-      <h1 className="text-3xl pacifico-regular text-cyan-700 flex justify-center my-9">
+      <h1 className="text-3xl pacifico-regular text-cyan-700 dark:text-cyan-400 flex justify-center my-9">
         Our Services
       </h1>
       <hr className="bg-slate-200 my-2 mx-5 h-[2px]" />

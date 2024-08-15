@@ -13,7 +13,7 @@ const Toolkit = () => {
   return (
     <div className="py-20">
       <AnimatedToolKit>
-        <h1 className="text-3xl pacifico-regular text-center -mt-12 mb-8 text-cyan-700">ToolKit</h1>
+        <h1 className="text-3xl pacifico-regular text-center -mt-12 mb-8 text-cyan-700 dark:text-cyan-400">ToolKit</h1>
         <hr className="bg-slate-200 my-2 mx-5 h-[2px]" />
         <div className="flex flex-col items-center ">
           <h1 className="text-4xl pacifico-regular my-10 shadow-inner shadow-cyan-300">My Toolkit💻</h1>

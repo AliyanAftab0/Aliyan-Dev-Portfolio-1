@@ -29,7 +29,7 @@ const Contact: React.FC = () => {
       />
       <div className="pacifico-regular mx-5 max-sm:h-[56rem] h-[50rem]">
         <AnimatedSection className="flex justify-center items-center text-center my-8">
-          <h1 className="text-3xl pacifico-regular text-cyan-700">
+          <h1 className="text-3xl pacifico-regular text-cyan-700 dark:text-cyan-400">
             Contact Us
           </h1>
         </AnimatedSection>
